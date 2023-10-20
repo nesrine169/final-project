@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Starbucks</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="61055025c32c81000497725b.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About US</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#follow">Follow Us</a></li>
+        </ul>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Welcome To</span>
+            <h1>Algeria Starbucks Coffee</h1>
+        </div>
+        <div class="home-img">
+            <img src="77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" alt="">
+        </div>
+    </section>
+
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Shop now</span>
+            <h1>choose your coffee</h1>
+        </div>
+
+        <div class="shop-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="Starbucks-Coffee-PNG-Free-Download.png" alt="">
+                </div>
+                <h2>Starbucks Coffee</h2>
+                <span>550 DA</span>
+                <div class="count">
+                    <button onclick="decrement('num1')">-</button>
+                    <span id="num1">0</span>
+                    <button onclick="increment('num1')">+</button>
+                </div>
+                <a href="#" class="btn" onclick="addToCart('num1')">ADD TO CART</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="shop2.png" alt="">
+                </div>
+                <h2>Starbucks Coffee</h2>
+                <span>450 DA</span>
+                <div class="count">
+                    <button onclick="decrement('num2')">-</button>
+                    <span id="num2">0</span>
+                    <button onclick="increment('num2')">+</button>
+                </div>
+                <a href="#" class="btn" onclick="addToCart('num2')">ADD TO CART</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="Starbucks-Coffee-PNG.png" alt="">
+                </div>
+                <h2>Starbucks Coffee</h2>
+                <span>600 DA</span>
+                <div class="count">
+                    <button onclick="decrement('num3')">-</button>
+                    <span id="num3">0</span>
+                    <button onclick="increment('num3')">+</button>
+                </div>
+                <a href="#" class="btn" onclick="addToCart('num3')">ADD TO CART</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-text">
+            <div class="about-heading">
+                <h1>About Starbucks Algeria</h1>
+            </div>
+            <br><span>W</span>elcome to the warm and welcoming world of Starbucks Algeria, where every cup of coffee tells a story, and every visit is an unforgettable experience. At Starbucks Algeria, we take pride in blending the best of global coffee with the richness of Algerian culture</p>
+            <br><span>O</span>ur journey began in 2023 when Starbucks opened its doors in Algeria for the first time. Since then, we have worked tirelessly to bring the magic of Starbucks to every neighborhood in Algeria. Our story is shaped by our love for quality coffee, our commitment to the community, and our deep respect for Algerian culture</p>
+            <br><span>A</span>t Starbucks Algeria, we are obsessed with the quality of our coffee. We collaborate with coffee producers from around the world to offer you exceptional beans, expertly roasted for each cup. Every sip is a taste adventure that reveals the unique flavors of our coffee</p>
+        </div>
+        <div class="about-img">
+            <img src="about-img.webp" alt="" id="img">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6394.545195327519!2d3.038449193204513!3d36.740027389056934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fad8a4c32cd75%3A0xda93023488c9f5d7!2sSidi%20Yahia%2C%20Hydra!5e0!3m2!1sfr!2sdz!4v1697807858161!5m2!1sfr!2sdz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form>
+                    <input type="text" placeholder="name" class="contact-form-txt">
+                    <input type="text" placeholder="email" class="contact-form-txt">
+                    <textarea placeholder="message" class="contact-form-text-area"></textarea>
+                    <input type="submit" name="submit" class="contact-form-btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="follow" id="follow">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Our Company</a>
+        </div>
+        <p>&#169; Nesrine Khouas All Right Reserved.</p>
+    </section>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
+
